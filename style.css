@@ -36,10 +36,18 @@
     'sidebar header'
     'sidebar main';
 }
-
 .sidebar {
     grid-area: sidebar;
-    background-color: aqua;
+    background-color: deepskyblue;
+    color: bisque;
+}
+.sidebar-logos {
+   filter: invert(88%) sepia(18%) saturate(639%) hue-rotate(326deg) brightness(104%) contrast(103%);
+}
+.sidebar-header {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
 }
 
 .header {
