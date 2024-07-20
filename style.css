@@ -30,7 +30,7 @@
 
 .page-container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 280px 1fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas:   
     'sidebar header'
@@ -38,8 +38,11 @@
 }
 .sidebar {
     grid-area: sidebar;
-    background-color: deepskyblue;
+    background-color: rgba(0, 143, 209, 0.954);
     color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .sidebar-logos {
    filter: invert(88%) sepia(18%) saturate(639%) hue-rotate(326deg) brightness(104%) contrast(103%);
@@ -49,6 +52,22 @@
     gap: 5px;
     padding: 10px;
 }
+.sidebar ul {
+    padding: 20px;
+}
+.sidebar li {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.sidebar a {
+    text-decoration: none;
+    color: bisque;
+}
+
 
 .header {
     grid-area: header;
