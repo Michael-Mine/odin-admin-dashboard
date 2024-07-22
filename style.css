@@ -25,9 +25,7 @@
   #root, #__next {
     isolation: isolate;
   }
-
 /* My code  */
-
 .page-container {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -67,14 +65,33 @@
     text-decoration: none;
     color: bisque;
 }
-
-
 .header {
     grid-area: header;
-    background-color: aquamarine;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 10px;
+}
+button {
+    background-color: inherit;
+    border: none;
+}
+input {
+    font: 16px system-ui;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+}
+input[type="search"], textarea {
+    background-color: lightgray;
 }
 
 .main-content {
     grid-area: main;
-    background-color: seagreen;
+    background-color: lightgray;
 }
