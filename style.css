@@ -90,7 +90,15 @@ input {
 input[type="search"], textarea {
     background-color: lightgray;
 }
-
+.header-user-info {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 25px;
+}
+.profile-name {
+    font-weight: bold;
+}
 .main-content {
     grid-area: main;
     background-color: lightgray;
