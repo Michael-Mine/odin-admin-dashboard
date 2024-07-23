@@ -34,9 +34,24 @@
     'sidebar header'
     'sidebar main';
 }
+.bgcolour-primary {
+    background-color: rgba(0, 143, 209, 0.954);
+}
+.header-buttons > a:hover {
+    color: rgba(0, 143, 209, 0.954);
+    background-color: bisque
+}
+.bgcolour-second {
+    background-color: bisque;
+}
+.bgcolour-third {
+    background-color: lightgray;
+}
+input[type="search"], textarea {
+    background-color: lightgray;
+}
 .sidebar {
     grid-area: sidebar;
-    background-color: rgba(0, 143, 209, 0.954);
     color: bisque;
     display: flex;
     flex-direction: column;
@@ -44,6 +59,10 @@
 }
 .sidebar-logos {
    filter: invert(88%) sepia(18%) saturate(639%) hue-rotate(326deg) brightness(104%) contrast(103%);
+}
+a {
+    text-decoration: none;
+    color: bisque;
 }
 .sidebar-header {
     display: flex;
@@ -61,13 +80,8 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-.sidebar a {
-    text-decoration: none;
-    color: bisque;
-}
 .header {
     grid-area: header;
-    background-color: bisque;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -88,9 +102,6 @@ input {
     width: 100%;
     border-radius: 50px;
     border: none;
-}
-input[type="search"], textarea {
-    background-color: lightgray;
 }
 .header-user-info {
     display: flex;
@@ -126,19 +137,11 @@ input[type="search"], textarea {
     padding:2px 6px;
     border: 0px;
     border-radius: 50px;
-    color: bisque;
-    background-color: rgba(0, 143, 209, 0.954);
     text-align: center;
-    text-decoration: none;
     font-weight: bold;
-}
-.header-buttons > a:hover {
-    color: rgba(0, 143, 209, 0.954);
-    background-color: bisque
 }
 .main-content {
     grid-area: main;
-    background-color: lightgray;
     display: grid;
     grid-template-columns: 1fr 250px;
     grid-template-rows: 1fr 1fr;
@@ -159,7 +162,6 @@ input[type="search"], textarea {
     gap: 20px;
 }
 .card {
-    background-color: bisque;
     padding: 25px 20px;
     border-radius: 10px;
     border-left: 0.5rem solid orange;
@@ -174,8 +176,7 @@ input[type="search"], textarea {
 .main-content-announcements {
     grid-area: announcements;
 }
-.main-content-announcement-card {
-    background-color: bisque;
+.main-content-announcement-card, .main-content-trending-card {
     padding: 30px 20px;
     border-radius: 10px;
     margin-top: 5px;
@@ -189,11 +190,6 @@ hr {
     grid-area: trending;
 }
 .main-content-trending-card {
-    background-color: bisque;
-    padding: 30px 20px;
-    border-radius: 10px;
-    margin-top: 5px;
-    font-size: 0.8rem;
     display: grid;
     grid-template-columns: 50px 1fr;
     row-gap: 20px;
