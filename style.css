@@ -46,20 +46,20 @@ body {
     'sidebar main';
 }
 .bgcolour-primary {
-    background-color: rgba(0, 143, 209, 0.954);
+    background-color: #6d28d9;
 }
 .header-buttons > a:hover {
-    color: rgba(0, 143, 209, 0.954);
-    background-color: bisque
+    color: #6d28d9;
+    background-color: #f3e8ff
 }
 .bgcolour-second {
-    background-color: bisque;
+    background-color: #ddd6fe;
 }
 .bgcolour-third {
-    background-color: lightgray;
+    background-color: #f3e8ff;
 }
 input[type="search"], textarea {
-    background-color: lightgray;
+    background-color: #f3e8ff;
 }
 .sidebar {
     grid-area: sidebar;
@@ -171,7 +171,7 @@ input {
 .main-content-project-cards {
     padding-top: 5px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-auto-rows: 1fr;
     gap: 20px;
 }
