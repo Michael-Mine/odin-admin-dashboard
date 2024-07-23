@@ -29,7 +29,7 @@
 .page-container {
     display: grid;
     grid-template-columns: 280px 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 200px 1fr;
     grid-template-areas:   
     'sidebar header'
     'sidebar main';
@@ -84,7 +84,7 @@ a {
     grid-area: header;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 100px 100px;
 }
 .header-search-bar-form {
     display: flex;
@@ -144,7 +144,7 @@ input {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 250px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 400px 1fr;
     grid-template-areas: 
         'projects announcements'
         'projects trending';
