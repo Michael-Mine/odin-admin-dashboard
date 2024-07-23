@@ -179,6 +179,7 @@ input[type="search"], textarea {
     padding: 30px 20px;
     border-radius: 10px;
     margin-top: 5px;
+    font-size: 0.8rem;
 }
 hr {
     margin-top: 1rem;
@@ -186,4 +187,14 @@ hr {
 }
 .main-content-trending {
     grid-area: trending;
+}
+.main-content-trending-card {
+    background-color: bisque;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    row-gap: 20px;
 }
