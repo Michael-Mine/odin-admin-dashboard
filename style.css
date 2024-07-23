@@ -26,6 +26,17 @@
     isolation: isolate;
   }
 /* My code  */
+
+@font-face {
+    font-family: "inter"; 
+    src:
+      url("inter-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "inter";
+}
 .page-container {
     display: grid;
     grid-template-columns: 280px 1fr;
